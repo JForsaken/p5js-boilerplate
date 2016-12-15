@@ -9,6 +9,7 @@ You might have heard about P5JS by watching Daniel Shiffman's [YouTube channel](
 2. Clone the project.
 3. `cd` to your the cloned project's path.
 4. Run `npm start`.
+5. Open up your browser at http://localhost:8080.
 
 Wait, *that's it* 🤔? 
 Yup 🍺😏.
