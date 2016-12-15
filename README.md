@@ -10,7 +10,7 @@ You might have heard about P5JS by watching Daniel Shiffman's [YouTube channel](
 3. `cd` to your the cloned project's path.
 4. Run `npm start`.
 
-Wait, *that's it* 🤔?
+Wait, *that's it* 🤔? 
 Yup 🍺😏.
 
 ## Additional Information
@@ -22,8 +22,9 @@ An additional file named `bouncer.js` illustrates how you can use multiple files
 
 ### lifecycle
 
-The two main functions that you will need to remember are `setup()` and `draw()`, which are both in `sketch.js`
-The setup function is run once before the first frame is drawn, and the draw function is called on every frame.
+The two main functions that you will need to remember are `setup()` and `draw()`, which are both in `sketch.js`.
+The setup function runs only once, before the first frame is drawn.
+The draw function is called on every frame.
 
 You might need to read P5JS' [examples](https://p5js.org/examples/) and [doc](https://p5js.org/reference/) for help.
 
