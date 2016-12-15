@@ -1,15 +1,17 @@
-var express = require('express');
-var path = require('path');
-var app = express();
+const express = require('express');
+const path = require('path');
 
-var static_path = path.join(__dirname, 'dist');
+const app = express();
+const staticPath = path.join(__dirname, 'dist');
 
-app.use(express.static(static_path))
-  .get('/*', function (req, res) {
+app.use(express.static(staticPath))
+  .get('/*', (req, res) => {
     res.sendFile('index.html', {
-      root: static_path 
+      root: staticPath,
     });
-  }).listen(process.env.PORT || 8080, function (err) {
-    if (err) { console.log(err) }
+  }).listen(process.env.PORT || 8080, (err) => {
+    if (err) {
+      console.log(err);
+    }
     console.log('Listening at localhost:8080');
   });
