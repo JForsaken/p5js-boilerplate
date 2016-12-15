@@ -1,3 +1,4 @@
 node_modules
 .DS_Store
 libraries
+npm-debug.log

@@ -1,14 +1,17 @@
 {
   "name": "p5js-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "P5JS starter kit including ES6, Webpack and ESLint.",
   "main": "sketch.js",
   "scripts": {
-    "start": "webpack --progress --colors --watch & npm run serve",
+    "start": "npm install && webpack --progress --colors --watch & npm run serve",
     "serve": "node server.js",
     "lint": "eslint ./src ./package.json --ext .js,.json --fix"
   },
-  "author": "",
+  "pre-commit": [
+    "lint"
+  ],
+  "author": "Justin D'Errico",
   "license": "",
   "devDependencies": {
     "babel-core": "^6.3.15",
@@ -20,6 +23,7 @@
     "eslint-config-airbnb-base": "^11.0.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-json": "^1.2.0",
+    "pre-commit": "^1.2.2",
     "webpack": "^1.12.9"
   },
   "dependencies": {
