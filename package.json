@@ -4,7 +4,7 @@
   "description": "P5JS starter kit including ES6, Webpack and ESLint.",
   "main": "sketch.js",
   "scripts": {
-    "start": "npm install && webpack --progress --colors --watch & npm run serve",
+    "start": "npm install && webpack --display-error-details --progress --colors --watch & npm run serve",
     "serve": "node server.js",
     "lint": "eslint ./src ./package.json --ext .js,.json --fix"
   },
@@ -19,6 +19,7 @@
     "babel-loader": "^6.2.0",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-stage-0": "^6.3.13",
+    "copy-webpack-plugin": "^4.0.1",
     "eslint": "^3.12.2",
     "eslint-config-airbnb-base": "^11.0.0",
     "eslint-plugin-import": "^2.2.0",
@@ -30,6 +31,7 @@
     "babel-polyfill": "^6.3.14",
     "express": "^4.13.3",
     "lodash": "^4.0.0",
+    "p5": "^0.5.5",
     "ramda": "^0.22.1"
   }
 }
